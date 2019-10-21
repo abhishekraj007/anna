@@ -1,0 +1,48 @@
+@import "../../styles/0-base/variables.scss";
+@import "../../styles/0-base/mixins.scss";
+.footer-main {
+  background-color: $footer-bg;
+  color: $white;
+  font-size: 12px;
+}
+
+.footer-top {
+  padding: 2rem 0;
+}
+
+.footer-title {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 0.5rem;
+}
+
+.footer-list {
+  li,
+  a {
+    color: $footer-link;
+
+    &:hover {
+      color: $footer-link-hover;
+    }
+  }
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba($color: #fff, $alpha: 0.5);
+  padding: 1.5rem 1rem;
+}
+
+.footer-secondary-text {
+  color: $white;
+  opacity: 0.5;
+  margin-bottom: 0;
+  font-family: $font-secondary;
+}
+
+.footer-social {
+  margin-top: 3rem;
+}
+
+.footer-social-link {
+  margin-right: 1rem;
+}

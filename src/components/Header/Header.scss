@@ -1,0 +1,114 @@
+@import "../../styles/0-base/variables.scss";
+@import "../../styles/0-base/mixins.scss";
+
+.primary-header {
+  border-bottom: 1px solid $border;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: $header-bg;
+  transition: top 0.3s;
+}
+
+.header-top {
+  background: #000;
+  text-align: center;
+  padding: 5px;
+
+  &__text {
+    font-size: 12px;
+    line-height: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-family: $font-secondary;
+  }
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  align-items: center;
+}
+
+/* Logo */
+.header-logo {
+  &__img {
+    width: 60px;
+    height: auto;
+
+    @include bp(md) {
+      width: 75px;
+    }
+  }
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  align-items: center;
+  display: flex;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.nav-item:not(.show-mobile) {
+  @include bp(mobile) {
+    display: none;
+  }
+}
+
+/* NavLink */
+
+.nav-link {
+  color: $nav-link;
+  display: block;
+  padding: 0.4rem 0;
+
+  &.active {
+    font-weight: 900;
+    color: $text-primary;
+
+    &.primary {
+      color: $theme-primary;
+    }
+  }
+
+  &:hover {
+    transition: all 0.3s;
+    text-decoration: none;
+    color: $theme-primary;
+  }
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Menu-toggler */
+.nav-toggler {
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 1rem;
+
+  @include bp(md) {
+    display: none;
+  }
+
+  .bar {
+    position: relative;
+    width: 24px;
+    height: 2px;
+    background-color: $menu-toggler-color;
+
+    &:not(:last-child) {
+      margin-bottom: 6px;
+    }
+  }
+}

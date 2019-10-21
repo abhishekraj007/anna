@@ -1,0 +1,97 @@
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+  font-weight: 500;
+}
+
+h1,
+.h1 {
+  @include fonts(1.8rem, 2.2rem, 2.8rem, null, null);
+}
+
+h2,
+.h2 {
+  @include fonts(1.4rem, 1.6rem, 1.8rem, null, null);
+}
+
+h3,
+.h3 {
+  @include fonts(1.2rem, 1.4rem, 1.6rem, null, null);
+}
+
+h4,
+.h4 {
+  @include fonts(1rem, 1.1rem, 1.2rem, null, null);
+}
+
+.fnt-bold {
+  font-weight: 600;
+}
+
+.fnt-bold-thick {
+  font-weight: 700;
+}
+
+.fnt-bold-extrathick {
+  font-weight: 900;
+}
+
+.text-primary {
+  color: $text-primary;
+}
+
+.text-secondary {
+  color: $text-secondary;
+}
+
+.text-tertiary {
+  color: $text-tertiary;
+}
+
+.text-theme {
+  color: $theme-primary;
+}
+
+.text-accent {
+  color: $theme-accent;
+}
+
+.text-sm {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.text-xs {
+  font-size: 10px;
+  line-height: 18px;
+}
+
+.text-lg {
+  @include fonts(1.3rem, 1.6rem, 1.8rem, null, null);
+  font-weight: 600;
+}
+
+a,
+.link {
+  color: $theme-primary;
+  transition: all 0.3s;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    color: darken($color: $theme-primary, $amount: 0.5);
+  }
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}

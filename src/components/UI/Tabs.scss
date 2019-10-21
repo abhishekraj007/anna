@@ -1,0 +1,54 @@
+@import "../../styles/0-base/variables.scss";
+
+.tabs {
+  border: 1px solid $border;
+}
+
+.tab {
+  padding: 2rem 2rem;
+}
+
+.tab-nav {
+  background-color: $tab-bg;
+  ul {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: inline-flex;
+      flex: 1;
+
+      a {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 1rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 1px solid $border;
+        border-top-color: $white;
+        font-weight: 700;
+        color: $text-primary;
+
+        &.active {
+          background-color: $white;
+          border-color: $white;
+          color: $theme-primary;
+        }
+      }
+    }
+  }
+}
+
+.tab-panes {
+  .active {
+    display: block;
+  }
+
+  .inactive {
+    display: none;
+  }
+}

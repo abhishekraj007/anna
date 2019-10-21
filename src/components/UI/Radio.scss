@@ -1,0 +1,36 @@
+@import "../../styles/0-base/variables.scss";
+
+.custom-radio {
+  display: inline-block;
+  input {
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+
+  input:checked + .radio-value {
+    border: 3px solid $theme-primary;
+  }
+
+  input[disabled] + .radio-value {
+    background-color: #c8c8c8;
+  }
+
+  .radio-value {
+    width: 34px;
+    height: 34px;
+    border: 1px solid $border;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    user-select: none;
+  }
+
+  &:not(:last-child) {
+    margin-right: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+}
