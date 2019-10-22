@@ -20,7 +20,7 @@ class Tabs extends Component {
       labels = this.props.children.map((child, index) => {
         if (child.type === Tab) {
           return (
-            <li>
+            <li key={index}>
               <a
                 href="#a"
                 className={

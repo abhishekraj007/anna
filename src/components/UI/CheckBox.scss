@@ -1,37 +1,39 @@
 @import "../../styles/0-base/variables.scss";
 
 .color-checkbox {
+  display: inline-block;
+
   input {
-    height: 0;
-    width: 0;
+    height : 0;
+    width  : 0;
     opacity: 0;
   }
 
-  input:checked + .color-label {
+  input:checked+.color-label {
     &::after {
-      position: absolute;
-      content: "";
-      width: 30px;
-      height: 30px;
-      border: 2px solid $theme-primary;
+      position     : absolute;
+      content      : "";
+      width        : 30px;
+      height       : 30px;
+      border       : 2px solid $theme-primary;
       border-radius: 50%;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
+      left         : 50%;
+      top          : 50%;
+      transform    : translate(-50%, -50%);
     }
   }
 
   .color-label {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
+    width           : 20px;
+    height          : 20px;
+    border-radius   : 50%;
     background-color: #000;
-    display: inline-flex;
-    position: relative;
+    display         : inline-flex;
+    position        : relative;
   }
 
   &:not(:last-child) {
-    margin-right: 0.75rem;
+    margin-right : 0.75rem;
     margin-bottom: 0.75rem;
   }
 }

@@ -1,12 +1,14 @@
 .form-input {
-  padding: 0.5rem 0;
-  border: 0;
+  padding      : 0.5rem 0;
+  border       : 0;
   border-bottom: 1px solid $white;
-  outline: none;
-  width: 100%;
+  outline      : none;
+  width        : 100%;
+  line-height  : 24px;
 
   &.transparent {
     background-color: transparent;
+    color           : $white;
   }
 
   &.italic {
@@ -19,17 +21,8 @@
 }
 
 .input-append {
-  position: absolute;
-  right: 0;
-  top: 50%;
+  position : absolute;
+  right    : 0;
+  top      : 50%;
   transform: translateY(-50%);
-}
-
-.button {
-  padding: 0.5rem;
-}
-
-.button.black {
-  background-color: transparent;
-  border: none;
 }

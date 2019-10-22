@@ -1,19 +1,38 @@
 import React from "react";
 import "./Radio.scss";
 
-const RadioButton = props => {
-  return (
-    <label className="custom-radio">
-      <input
-        type="radio"
-        name={props.name}
-        value={props.size.name}
-        disabled={props.size.disabled}
-        checked={props.size.checked}
-      ></input>
-      <span className="radio-value">{props.size.value}</span>
-    </label>
-  );
-};
+class RadioButton extends React.Component {
+  state = {
+    size: "6"
+  };
+
+  onChange = e => {
+    // console.log(e);
+
+    this.setState({
+      checked: e.target.value
+    });
+
+    // e.target.checked = true;
+  };
+
+  render() {
+    const { name, size } = this.props;
+
+    return (
+      <label className="custom-radio">
+        <input
+          type="radio"
+          name={name}
+          value={size.name}
+          disabled={size.disabled}
+          checked={this.state.size === size.checked ? size.value : "6"}
+          onChange={this.onChange.bind(this)}
+        ></input>
+        <span className="radio-value">{size.value}</span>
+      </label>
+    );
+  }
+}
 
 export { RadioButton };

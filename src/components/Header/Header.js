@@ -1,14 +1,14 @@
 import React from "react";
 import "./Header.scss";
 import logo from "../../assets/img/logo.svg";
-import accountIcon from "../../assets/img/icon-account.png";
-import cartIcon from "../../assets/img/icon-cart.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser, faShoppingBag } from "@fortawesome/free-solid-svg-icons";
 
 const Header = props => {
   return (
     <header className="primary-header">
       <div className="header-top">
-        <span className="header-top__text">Free Us shipping & return</span>
+        <span className="header-top-text">Free Us shipping & return</span>
       </div>
       <div className="container-fluid">
         <div className="header-nav">
@@ -43,14 +43,15 @@ const Header = props => {
                   About
                 </a>
               </li>
-              <li className="nav-item show-mobile">
+              <li className="nav-item show-mobile nav-icon-item">
                 <a className="nav-link" href="#index">
-                  <img src={accountIcon} alt="..." />
+                  <FontAwesomeIcon icon={faUser} />
                 </a>
               </li>
-              <li className="nav-item show-mobile">
+              <li className="nav-item show-mobile nav-icon-item">
                 <a className="nav-link" href="#index">
-                  <img src={cartIcon} alt="..." />
+                  <FontAwesomeIcon icon={faShoppingBag} />
+                  <span className="cart-added-count">2</span>
                 </a>
               </li>
             </ul>

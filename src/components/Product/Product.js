@@ -10,14 +10,16 @@ const Product = props => {
 
           {props.productsImages[props.product.id] && (
             <img
-              className="product-image"
+              className="product-image img-fluid"
               src={props.productsImages[props.product.id].url}
               alt="..."
             ></img>
           )}
         </div>
-        <h2 className="product-name">{props.product.name}</h2>
-        <span className="product-price">${props.product.price}</span>
+        <div className="product-item-info">
+          <h2 className="product-name">{props.product.name}</h2>
+          <span className="product-price">${props.product.price}</span>
+        </div>
       </a>
     </>
   );

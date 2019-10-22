@@ -8,16 +8,16 @@
 
 /* Medium screen / desktop*/
 
-$xs: 320px;
-$sm: 576px;
-$md: 768px;
-$mobile: 767px;
-$lg: 992px;
-$tablet: 991px;
+$xs     : 320px;
+$sm     : 576px;
+$md     : 768px;
+$mobile : 767px;
+$lg     : 992px;
+$tablet : 991px;
 $desktop: 1024px;
-$xl: 1200px;
-$sxl: 1600px;
-$mxl: 1900px;
+$xl     : 1200px;
+$sxl    : 1600px;
+$mxl    : 1900px;
 
 /* larger-screens */
 
@@ -47,8 +47,10 @@ $sm-max: ($sm - 1);
 
 /* Title Font Family*/
 
-$font-primary: "Gotham", sans-serif;
-$font-secondary: "Open Sans", sans-serif;
+$font-primary: 'Open Sans',
+sans-serif;
+$font-secondary: "Gotham",
+sans-serif;
 
 /*=============================================
 =                COLORS NAME                  =
@@ -66,10 +68,11 @@ $yellow: #ffb121;
 
 $green: #19b64f;
 
-$white: #ffffff;
-$black: #000000;
-$white-gray: #fafafa;
+$white          : #ffffff;
+$black          : #000000;
+$white-gray     : #fafafa;
 $white-gray-dark: #f2f2f2;
+$bg-gray        : rgba(#f1f1f1, 0.3);
 
 /*=============================================
 =               THEME COLORS                  =
@@ -81,29 +84,30 @@ $white-gray-dark: #f2f2f2;
 
 /* Theme colors*/
 
-$theme-primary: #7dc242;
+$theme-primary      : #7dc242;
 $theme-primary-light: #f7c640;
-$theme-accent: #000;
+$theme-accent       : #000;
 
 /* Text colors */
-$text-primary: #000000;
-$text-secondary: #333333;
-$text-tertiary: #999999;
+$text-primary  : #000000;
+$text-secondary: #4a4a4a;
+$text-tertiary : #999999;
 
-$border: #c8c8c8;
+$border      : #c8c8c8;
 $border-light: rgba(0, 0, 0, 0.06);
-$border-dark: rgba(0, 0, 0, 0.2);
+$border-dark : rgba(0, 0, 0, 0.2);
 
 /* Navigation */
-$header-bg: $white;
-$nav-link: $text-primary;
-$nav-link-hover: $theme-primary;
+$header-bg         : $white;
+$header-border     : rgba(0, 0, 0, 0.1);
+$nav-link          : $text-primary;
+$nav-link-hover    : $theme-primary;
 $menu-toggler-color: $text-primary;
-$menu-bg: $white;
-$submenu-bg: $white-gray;
+$menu-bg           : $white;
+$submenu-bg        : $white-gray;
 
 /* Card */
-$card-border: $border;
+$card-border       : $border;
 $card-border-radius: 4px;
 
 /* Card */

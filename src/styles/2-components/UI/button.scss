@@ -1,37 +1,58 @@
 .button {
-  background-color: $white;
-  border: none;
-  padding: 0.7rem 1.4rem;
-  cursor: pointer;
-  border-radius: 4px;
-  font-weight: 900;
-  transition: all 0.3s;
-  color: $text-primary;
-  min-width: 1rem;
-  text-transform: uppercase;
+  background-color      : $white;
+  border                : none;
+  padding               : 1rem;
+  cursor                : pointer;
+  // border-radius      : 4px;
+  font-weight           : 900;
+  transition            : all 0.3s;
+  // color              : $text-primary;
+  min-width             : 1rem;
+  text-transform        : uppercase;
+
+  @include bp(md) {
+    padding: 1.4rem;
+  }
 
   &:focus,
   &:hover {
-    outline: none;
-    color: $text-primary;
+    outline   : none;
+    // color  : $text-primary;
   }
 
   &-primary {
     background-color: $theme-primary;
+    color           : $white;
 
     &:hover {
-      background-color: $theme-primary-light;
+      background-color: $theme-primary;
     }
   }
 
   &-outline-black {
     background-color: transparent;
-    border: 1px solid $white;
+    border          : 2px solid $white;
+
     color: $white;
   }
 
   &-transparent {
     background-color: transparent;
-    color: $white;
+    color           : $white;
   }
+}
+
+.button-block {
+  display: block;
+  width  : 100%;
+}
+
+.button-small {
+  padding  : 0.8rem 1.5rem;
+  font-size: 10px;
+}
+
+.button.black {
+  background-color: transparent;
+  border          : none;
 }

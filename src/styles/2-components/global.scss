@@ -1,8 +1,15 @@
 body {
   font-family: $font-primary;
-  font-size: 16px;
+  font-size  : 16px;
+  font-weight: 600;
 }
 
 .main {
-  margin-top: 120px;
+
+  margin-top: 90px;
+
+  @include bp(md) {
+    margin-top: 120px;
+
+  }
 }

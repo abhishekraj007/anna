@@ -1,22 +1,32 @@
 @import "../../styles/0-base/variables.scss";
 @import "../../styles/0-base/mixins.scss";
+
 .footer-main {
   background-color: $footer-bg;
-  color: $white;
-  font-size: 12px;
+  color           : $white;
+  font-size       : 12px;
+
+  @include bp(mobile) {
+    padding: 0 1.5rem;
+  }
 }
 
 .footer-top {
   padding: 2rem 0;
+
+  @include bp(md) {
+    padding: 3rem 0;
+  }
 }
 
 .footer-title {
   text-transform: uppercase;
-  font-size: 12px;
-  margin-bottom: 0.5rem;
+  font-size     : 12px;
+  margin-bottom : 0.5rem;
 }
 
 .footer-list {
+
   li,
   a {
     color: $footer-link;
@@ -29,20 +39,32 @@
 
 .footer-bottom {
   border-top: 1px solid rgba($color: #fff, $alpha: 0.5);
-  padding: 1.5rem 1rem;
+  padding   : 1.5rem 1rem;
 }
 
 .footer-secondary-text {
-  color: $white;
-  opacity: 0.5;
+  color        : $white;
+  opacity      : 0.5;
   margin-bottom: 0;
-  font-family: $font-secondary;
+  font-weight  : 400;
 }
 
 .footer-social {
-  margin-top: 3rem;
+  margin-top: 2.6rem;
 }
 
 .footer-social-link {
   margin-right: 1rem;
+}
+
+.newslater-input {
+  font-size  : 12px;
+  font-weight: 700;
+}
+
+.footer-top-right {
+  @include bp(mobile) {
+    order        : -1;
+    margin-bottom: 2rem;
+  }
 }

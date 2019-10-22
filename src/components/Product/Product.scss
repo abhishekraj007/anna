@@ -1,10 +1,74 @@
+@import "../../styles/0-base/variables.scss";
+@import "../../styles/0-base/mixins.scss";
+
 .product-image {
-  height: 378px;
+  height      : 200px;
+  // max-width: 100%;
+  width       : 100%;
+  object-fit  : cover;
+
+  @include bp(md) {
+    height: 378px;
+
+  }
+}
+
+.products-wrapper {
+
+  @include bp(mobile) {
+
+    display  : flex;
+    flex-wrap: wrap;
+  }
 }
 
 .product-item {
   text-decoration: none;
-  color: #000;
+  color          : #000;
+
+  @include bp(mobile) {
+    width        : calc(50% - 1rem);
+    margin-bottom: 1rem;
+
+    &:nth-child(2n + 1) {
+      margin-right: 0.5rem;
+    }
+
+    &:nth-child(2n + 2) {
+      margin-left: 0.5rem;
+    }
+  }
+
+  @include bp(md) {
+    margin-right: 1rem;
+  }
+
+}
+
+.product-item-info {
+  @include bp(md) {
+    padding-left: 0.5rem;
+  }
+}
+
+.product-name {
+  color: $text-primary;
+  @include fonts-px(12px, 14px, 16px, null, null);
+  margin-top: 0.5rem;
+}
+
+.product-name {
+  color: $text-primary;
+  @include fonts-px(12px, 14px, 16px, null, null);
+  margin-top : 0.5rem;
+  font-weight: 700;
+}
+
+.product-price {
+  color: $text-secondary;
+  @include fonts-px(12px, 12px, 14px, null, null);
+  margin-top : 0.5rem;
+  font-weight: 700;
 }
 
 .product-thumbnail {
@@ -12,7 +76,13 @@
 }
 
 .product-tag {
-  position: absolute;
-  top: 0.5rem;
-  left: 0.5rem;
+  position        : absolute;
+  top             : 0.5rem;
+  left            : 0.5rem;
+  background-color: $white;
+  padding         : 0.4rem;
+  font-size       : 10px;
+  text-transform  : uppercase;
+  font-weight     : 600;
+  ;
 }

@@ -1,0 +1,9 @@
+@import "../../styles/0-base/variables.scss";
+@import "../../styles/0-base/mixins.scss";
+
+.pdp-left {
+    @include bp(mobile) {
+        order     : 1;
+        margin-top: 1rem;
+    }
+}

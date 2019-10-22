@@ -1,0 +1,28 @@
+.slick-slider {
+    position: relative;
+}
+
+.slick-arrow {
+    background-color: transparent;
+    border          : none;
+    position        : absolute;
+    z-index         : 2;
+    top             : 50%;
+    transform       : translateY(-50%);
+}
+
+.slick-prev {
+    left: 1rem;
+
+    @include bp(md) {
+        left: -2rem;
+    }
+}
+
+.slick-next {
+    right: 1rem;
+
+    @include bp(md) {
+        right: -2rem;
+    }
+}

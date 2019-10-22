@@ -1,0 +1,17 @@
+.section {
+    padding: 1rem 0;
+    margin : 1rem 0;
+
+    @include bp(md) {
+        padding: 2rem 0;
+        margin : 2rem 0;
+    }
+}
+
+.section-title {
+    margin-bottom: 1rem;
+
+    @include bp(md) {
+        margin-bottom: 2rem;
+    }
+}

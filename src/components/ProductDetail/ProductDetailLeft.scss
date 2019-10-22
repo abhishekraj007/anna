@@ -1,0 +1,12 @@
+@import "../../styles/0-base/variables.scss";
+@import "../../styles/0-base/mixins.scss";
+
+.pdp-back-btn {
+    img {
+        height      : 8px;
+        margin-right: 0.5rem;
+    }
+
+    display      : block;
+    margin-bottom: 1rem;
+}
