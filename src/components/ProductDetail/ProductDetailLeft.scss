@@ -2,11 +2,17 @@
 @import "../../styles/0-base/mixins.scss";
 
 .pdp-back-btn {
-    img {
-        height      : 8px;
-        margin-right: 0.5rem;
+
+    @include bp(mobile) {
+        display: none;
     }
 
     display      : block;
     margin-bottom: 1rem;
+}
+
+.pdp-left-info {
+    @include bp(mobile) {
+        padding: 0 1rem;
+    }
 }

@@ -27,15 +27,15 @@
   color          : #000;
 
   @include bp(mobile) {
-    width        : calc(50% - 1rem);
+    width        : calc(50% - 0.25rem);
     margin-bottom: 1rem;
 
     &:nth-child(2n + 1) {
-      margin-right: 0.5rem;
+      margin-right: 0.25rem;
     }
 
     &:nth-child(2n + 2) {
-      margin-left: 0.5rem;
+      margin-left: 0.25rem;
     }
   }
 

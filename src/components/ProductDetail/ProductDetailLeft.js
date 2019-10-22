@@ -132,7 +132,7 @@ export default class ProductDetailLeft extends Component {
 
     return (
       <div>
-        <div className="left-info">
+        <div className="pdp-left-info">
           <a
             href="#index"
             className="pdp-back-btn text-xs text-uppercase text-primary"
@@ -160,9 +160,12 @@ export default class ProductDetailLeft extends Component {
               <div className="tab-body">
                 {/* Show Color */}
                 <p className="text-uppercase text-xs mb-3">Select Color</p>
-                {colors.map(color => {
-                  return <ColorCheckbox key={color.value} color={color} />;
-                })}
+
+                <div className="color-box-wrapper">
+                  {colors.map(color => {
+                    return <ColorCheckbox key={color.value} color={color} />;
+                  })}
+                </div>
 
                 {/* Show Sizes */}
                 <div className="center-xy-between mb-3 mt-4">
@@ -174,11 +177,13 @@ export default class ProductDetailLeft extends Component {
                     _Size & Fit Guide
                   </a>
                 </div>
-                {sizes.map(size => {
-                  return (
-                    <RadioButton key={size.value} name="size" size={size} />
-                  );
-                })}
+                <div className="size-box-wrapper">
+                  {sizes.map(size => {
+                    return (
+                      <RadioButton key={size.value} name="size" size={size} />
+                    );
+                  })}
+                </div>
               </div>
 
               {/* Show Button */}
@@ -191,9 +196,11 @@ export default class ProductDetailLeft extends Component {
               <div className="tab-body">
                 {/* Show Color */}
                 <p className="text-uppercase text-xs mb-3">Select Color</p>
-                {colors.map(color => {
-                  return <ColorCheckbox key={color.value} color={color} />;
-                })}
+                <div className="color-box-wrapper">
+                  {colors.map(color => {
+                    return <ColorCheckbox key={color.value} color={color} />;
+                  })}
+                </div>
 
                 {/* Show Sizes */}
                 <div className="center-xy-between mb-3 mt-4">
@@ -205,11 +212,13 @@ export default class ProductDetailLeft extends Component {
                     _Size & Fit Guide
                   </a>
                 </div>
-                {sizes.map(size => {
-                  return (
-                    <RadioButton key={size.value} name="size" size={size} />
-                  );
-                })}
+                <div className="size-box-wrapper">
+                  {sizes.map(size => {
+                    return (
+                      <RadioButton key={size.value} name="size" size={size} />
+                    );
+                  })}
+                </div>
               </div>
               <button className="button button-primary button-block">
                 ADD TO BAG
