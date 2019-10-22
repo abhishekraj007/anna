@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/anna/static/css/main.d37c3786.chunk.css",
-    "main.js": "/anna/static/js/main.c0110710.chunk.js",
-    "main.js.map": "/anna/static/js/main.c0110710.chunk.js.map",
+    "main.css": "/anna/static/css/main.195e7c31.chunk.css",
+    "main.js": "/anna/static/js/main.a988b6fa.chunk.js",
+    "main.js.map": "/anna/static/js/main.a988b6fa.chunk.js.map",
     "runtime-main.js": "/anna/static/js/runtime-main.529b990d.js",
     "runtime-main.js.map": "/anna/static/js/runtime-main.529b990d.js.map",
     "static/js/2.c6bb67a7.chunk.js": "/anna/static/js/2.c6bb67a7.chunk.js",
     "static/js/2.c6bb67a7.chunk.js.map": "/anna/static/js/2.c6bb67a7.chunk.js.map",
     "index.html": "/anna/index.html",
-    "precache-manifest.33e17a4d05f69aff032d21235973f1bf.js": "/anna/precache-manifest.33e17a4d05f69aff032d21235973f1bf.js",
+    "precache-manifest.a1fd1c15797c401ce24136c710c3a2ae.js": "/anna/precache-manifest.a1fd1c15797c401ce24136c710c3a2ae.js",
     "service-worker.js": "/anna/service-worker.js",
-    "static/css/main.d37c3786.chunk.css.map": "/anna/static/css/main.d37c3786.chunk.css.map",
+    "static/css/main.195e7c31.chunk.css.map": "/anna/static/css/main.195e7c31.chunk.css.map",
     "static/media/icon-arrow-left.svg": "/anna/static/media/icon-arrow-left.93a70839.svg",
     "static/media/icon-arrow-right.svg": "/anna/static/media/icon-arrow-right.ac190530.svg",
     "static/media/icon-facebook.svg": "/anna/static/media/icon-facebook.edb85ea6.svg",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.529b990d.js",
     "static/js/2.c6bb67a7.chunk.js",
-    "static/css/main.d37c3786.chunk.css",
-    "static/js/main.c0110710.chunk.js"
+    "static/css/main.195e7c31.chunk.css",
+    "static/js/main.a988b6fa.chunk.js"
   ]
 }
